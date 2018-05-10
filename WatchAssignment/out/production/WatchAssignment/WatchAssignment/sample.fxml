@@ -1,0 +1,18 @@
+<!--
+ * Created by Ben Halligan
+ * 5/10/2018
+ * ############################################################################
+ * "THE BEER-WARE LICENSE" (Revision 42):
+ * Ben Halligan wrote this file.  As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and you think
+ * this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
+ * ############################################################################
+ -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="WatchAssignment.Assigner"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+</GridPane>
