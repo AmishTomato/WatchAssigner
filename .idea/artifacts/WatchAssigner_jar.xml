@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="WatchAssigner:jar">
+  <artifact type="jar" build-on-make="true" name="WatchAssigner:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/WatchAssigner_jar</output-path>
     <root id="archive" name="WatchAssigner.jar">
       <element id="module-output" name="WatchAssigner" />
