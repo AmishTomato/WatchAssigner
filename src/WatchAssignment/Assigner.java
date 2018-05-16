@@ -59,7 +59,7 @@ public class Assigner {
         String[] temp;
         for(int x=0; x<sailors.size(); x++){
             temp = sailors.get(x).getWatches();
-            System.out.println(temp[0]+" "+temp[1]+" "+temp[2]);
+            System.out.println(temp[0]+" "+temp[1]+" | "+temp[2]);
         }
     }
 
@@ -68,7 +68,7 @@ public class Assigner {
         String[] out;
         for(int n=0; n<sailors.size(); n++){
             out = sailors.get(n).getWatches();
-            writer.write(out[0]+" "+out[1]+" "+out[2]+"\n");
+            writer.write(out[0]+" "+out[1]+" | "+out[2]+"\n");
         }
         writer.close();
     }
@@ -86,7 +86,7 @@ public class Assigner {
 
     private Watch getWatch(){
         int index = getRandom();
-        if (index ==0){
+        if (index ==0 || watches.isEmpty()){
             if(nvm%2==0){
                 ++nvm;
                 return CLEAN;
