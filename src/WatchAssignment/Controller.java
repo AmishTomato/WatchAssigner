@@ -1,9 +1,10 @@
 package WatchAssignment;
 
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 
 import java.io.IOException;
 import java.util.List;
@@ -42,6 +43,29 @@ public class Controller {
     private Button assignBtn;
 
     /* Menu Stuff */
+    @FXML
+    private MenuBar menuBar;
+
+    @FXML
+    private Menu file;
+    @FXML
+    private MenuItem open;
+    @FXML
+    private MenuItem save;
+    @FXML
+    private MenuItem exit;
+
+    @FXML
+    private Menu edit;
+    @FXML
+    private MenuItem delete;
+
+    @FXML
+    private Menu help;
+    @FXML
+    private MenuItem about;
+
+
 
 
     public void initialize(){
@@ -54,6 +78,28 @@ public class Controller {
             ex.printStackTrace();
         }
     }
+
+    private void setMenuBar(){
+        open.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                // open file
+            }
+        });
+        save.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                // save to txt file
+            }
+        });
+        exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.exit(0);
+            }
+        });
+    }
+
 
     private void populateListViews(){
         sailors =  assigner.getSailorList();
