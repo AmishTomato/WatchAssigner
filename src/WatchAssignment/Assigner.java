@@ -11,11 +11,16 @@ package WatchAssignment;
  * ----------------------------------------------------------------------------
  **/
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.SimpleTimeZone;
 
 public class Assigner {
 
@@ -41,10 +46,13 @@ public class Assigner {
     public Assigner(String filename)throws IOException{
         inputFile(filename);
         populateWatches();
-        System.out.println(watches.size());
+        System.out.println("Number of Watches: "+watches.size());
         nvm =1;
     }
 
+    /**
+     * Assigns Watches to sailors
+     */
     public void assignWatches(){
         for(int h=0; h<sailors.size(); h++){
             sailors.get(h).addFirstWatch(getWatch());
@@ -55,6 +63,9 @@ public class Assigner {
     }
 
 
+    /**
+     * Prints sailors with assigned Watches
+     */
     public void printAll(){
         String[] temp;
         for(int x=0; x<sailors.size(); x++){
@@ -83,6 +94,13 @@ public class Assigner {
             System.out.println(ASSIGNMENTS[w][0]+" with "+ASSIGNMENTS[w][1]+" watches");
         }
     }
+
+    public ObservableList<Sailor> getSailorList(){
+        ObservableList<Sailor> out = FXCollections.observableList(sailors);
+        return out;
+    }
+
+
 
     private Watch getWatch(){
         int index = getRandom();

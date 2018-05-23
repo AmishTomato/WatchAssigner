@@ -35,4 +35,12 @@ public class Sailor {
         String[] out = {name, watch1.getName(), watch2.getName()};
         return out;
     }
+
+    public Watch getWatch1() {
+        return watch1;
+    }
+
+    public Watch getWatch2() {
+        return watch2;
+    }
 }
