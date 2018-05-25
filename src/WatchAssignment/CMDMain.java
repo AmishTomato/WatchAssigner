@@ -11,12 +11,14 @@ package WatchAssignment;
  * ----------------------------------------------------------------------------
  **/
 
+import java.io.File;
 import java.io.IOException;
 
 public class CMDMain {
     public static void main(String[] args) {
         try {
-            Assigner assigner = new Assigner("Random_Names_Text.txt");
+            Assigner assigner = new Assigner();
+            assigner.loadFile(new File("Random_Names_Text.txt"));
             assigner.assignWatches();
             assigner.printAll();
             assigner.writeFile();

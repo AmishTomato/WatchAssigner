@@ -71,62 +71,15 @@ public class Controller {
     private MenuItem about;
 
 
+    public Controller(){
+        // default constructor
+    }
 
-
+    @FXML
     public void initialize(){
-        assigner = new Assigner();
-        assigner.assignWatches();
-        fileChooser.setTitle("Choose File");
-        populateListViews();
+
     }
 
-    private void setMenuBar(){
-        open.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                // open file
-                try {
-                    File file = fileChooser.showOpenDialog(new Stage());
-                    assigner.loadFile(file);
-                }catch (IOException err){
-                    err.getStackTrace();
-                }
-            }
-        });
-        save.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                // save to txt file
-                try {
-                    assigner.writeFile();
-                }catch (IOException ex){
-                    System.err.println(ex.getMessage());
-                }
-            }
-        });
-        exit.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                System.exit(0);
-            }
-        });
-    }
-
-
-    private void populateListViews(){
-        sailors =  assigner.getSailorList();
-        getWatches();
-        sailorListView.setItems(sailors);
-        firstWatchListView.setItems(firstWatches);
-        secondListView.setItems(secondWatches);
-    }
-
-    private void getWatches(){
-        for(int i=0; i<sailors.size(); i++){
-            firstWatches.add(sailors.get(i).getWatch1());
-            secondWatches.add(sailors.get(i).getWatch2());
-        }
-    }
 
 
 }
