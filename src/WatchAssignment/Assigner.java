@@ -44,10 +44,7 @@ public class Assigner {
     private ArrayList<Watch> watches =  new ArrayList<>();
     private ArrayList<Sailor> sailors = new ArrayList<>();
 
-    public Assigner(String filename)throws IOException{
-        inputFile(filename);
-        populateWatches();
-        System.out.println("Number of Watches: "+watches.size());
+    public Assigner(){
         nvm =1;
     }
 
@@ -73,6 +70,13 @@ public class Assigner {
             temp = sailors.get(x).getWatches();
             System.out.println(temp[0]+" "+temp[1]+" | "+temp[2]);
         }
+    }
+
+    public void loadFile(File file)throws IOException{
+        String filename = file.getName();
+        inputFile(filename);
+        populateWatches();
+        System.out.println("Number of Watches: "+watches.size());
     }
 
     public void writeFile() throws IOException{
