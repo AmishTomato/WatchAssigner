@@ -5,7 +5,10 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -27,6 +30,8 @@ public class Controller {
     private ObservableList<Sailor> sailors;
     private ObservableList<Watch>  firstWatches;
     private ObservableList<Watch> secondWatches;
+
+    private FileChooser fileChooser = new FileChooser();
 
     /* List Views */
     @FXML
@@ -69,14 +74,10 @@ public class Controller {
 
 
     public void initialize(){
-        try {
-            assigner = new Assigner("Random_Names_Text.txt");
-            assigner.assignWatches();
-            populateListViews();
-        }catch (IOException ex){
-            System.err.println(ex.getMessage());
-            ex.printStackTrace();
-        }
+        assigner = new Assigner();
+        assigner.assignWatches();
+        fileChooser.setTitle("Choose File");
+        populateListViews();
     }
 
     private void setMenuBar(){
@@ -84,12 +85,23 @@ public class Controller {
             @Override
             public void handle(ActionEvent event) {
                 // open file
+                try {
+                    File file = fileChooser.showOpenDialog(new Stage());
+                    assigner.loadFile(file);
+                }catch (IOException err){
+                    err.getStackTrace();
+                }
             }
         });
         save.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 // save to txt file
+                try {
+                    assigner.writeFile();
+                }catch (IOException ex){
+                    System.err.println(ex.getMessage());
+                }
             }
         });
         exit.setOnAction(new EventHandler<ActionEvent>() {
