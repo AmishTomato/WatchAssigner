@@ -66,11 +66,16 @@ public class Controller {
     private MenuItem about;
 
 
+    public Controller(){
+        // default constructor
+    }
 
-
+    @FXML
     public void initialize(){
         try {
             assigner = new Assigner("Random_Names_Text.txt");
+            setMenuBar();
+            setListViews();
             assigner.assignWatches();
             populateListViews();
         }catch (IOException ex){
@@ -98,8 +103,40 @@ public class Controller {
                 System.exit(0);
             }
         });
+        delete.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                // delete
+            }
+        });
+        about.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("Created by: Ben Halligan\nVersion: 1.0.0");
+            }
+        });
     }
 
+    private void setBtn(){
+        loadBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                // open file Option to select text file
+            }
+        });
+        assignBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                assigner.assignWatches();
+            }
+        });
+    }
+
+    private void setListViews(){
+        sailorListView = new ListView<String>();
+        firstWatchListView = new ListView<String>();
+        secondListView = new ListView<String>();
+    }
 
     private void populateListViews(){
         sailors =  assigner.getSailorList();
