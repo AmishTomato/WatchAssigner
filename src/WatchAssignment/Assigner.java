@@ -89,14 +89,26 @@ public class Assigner {
         writer.close();
     }
 
-    public void printNames(){
-        for(int i=0; i<sailors.size(); i++){
-            System.out.println(sailors.get(i).getName());
+    public boolean loadSailors(String filename){
+        try {
+            in = new Scanner(new File(filename));
+            String[] line;
+
+            while (in.hasNextLine()) {
+                line = in.nextLine().split("/");
+                addTimes(new Watch(line[0]), Integer.parseInt(line[1]));
+            }
+            in.close();
+        }catch (IOException err){
+            err.printStackTrace();
+            return false;
         }
+        return true;
     }
-    public void printWatches(){
-        for (int w=0; w<ASSIGNMENTS.length; w++){
-            System.out.println(ASSIGNMENTS[w][0]+" with "+ASSIGNMENTS[w][1]+" watches");
+
+    private void addTimes(Watch watch, int times){
+        for(int i=0; i<times; ++i){
+            watches.add(watch);
         }
     }
 
@@ -104,8 +116,6 @@ public class Assigner {
         ObservableList<Sailor> out = FXCollections.observableList(sailors);
         return out;
     }
-
-
 
     private Watch getWatch(){
         int index = getRandom();
