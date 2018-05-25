@@ -1,0 +1,49 @@
+Julianus CGI | A_ROVE
+Minucius PAD5 | PAD2
+Marinus WEIGHTROOM | B-1 PERIM
+Faustus PAD1 | PERIM
+Viducius A_ROVE | G-1 PERIM
+Lucius PAD4 | G-1 PERIM
+Decius BEQ QD | B-ROVE
+Gnaeus PERIM | B-1 PERIM
+Marcellus BEQ QD | NPS MESS
+Tiberius G-1 PERIM | PAD5
+Numberius NFAS PHONE | PAD3
+Lucius NPS PHONE | ESCORT2
+Menenius B-ROVE | PAD3
+Sisenna GAMEROOM | PAD2
+Gallus CGI | B-ROVE
+Statius B-ROVE | NPS MESS
+Larcius A_ROVE | A_ROVE
+Trebellius NFAS PHONE | BEQ QD
+Decmus NPS MESS | A_ROVE
+Spurius GAMEROOM | WEIGHTROOM
+Palpellius ESCORT1 | WEIGHTROOM
+Aulus BEQ QD | B-ROVE
+Flavius WEIGHTROOM | G-1 PERIM
+Decius PERIM | ESCORT1
+Herius B-1 PERIM | B-ROVE
+Canus PERIM | GAMEROOM
+Canutius B-1 PERIM | NFAS PHONE
+Horatius NFAS MESS | PERIM
+Blossius PAD2 | PERIM
+Camillius NFAS PHONE | A_ROVE
+Caeparius B-ROVE | ESCORT2
+Bitucus PAD4 | CLEAN
+Quinctius ESCORT1 | PERIM
+Cyprias PAD3 | ESCORT2
+Placus NPS PHONE | G-1 PERIM
+Papirius B-1 PERIM | B-1 PERIM
+Salonianus CGI | B-1 PERIM
+Volusenus G-1 PERIM | PAD1
+Agricola EXTRA | NFAS MESS
+Barrius G-1 PERIM | NFAS MESS
+Sulinus B-1 PERIM | A_ROVE
+Sextus PAD5 | NPS MESS
+Sepunius PERIM | NPS PHONE
+Cinnianus PAD1 | G-1 PERIM
+Numerius PAD3 | B-ROVE
+Drausus PAD4 | EXTRA
+Postumius PAD5 | CLEAN
+Gaius NPS PHONE | EXTRA
+Arruns NFAS MESS | CLEAN

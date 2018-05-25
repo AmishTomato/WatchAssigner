@@ -77,9 +77,60 @@ public class Controller {
 
     @FXML
     public void initialize(){
-
+        setUpFileMenu();
+        setUpEditHelpMenu();
     }
 
+    private void setUpFileMenu(){
+        open.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                // Open assignment File
+            }
+        });
+        save.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try {
+                    assigner.writeFile();
+                }catch (IOException err){
+                    errorAlert(err);
+                }
+            }
+        });
+        exit.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.exit(0);
+            }
+        });
+    }
 
+    private void setUpEditHelpMenu(){
+        delete.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                //TODO: Delete things
+            }
+        });
+        about.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                Alert aboutpage = new Alert(Alert.AlertType.INFORMATION);
+                aboutpage.setTitle("About");
+                aboutpage.setHeaderText("Watch Assigner Version: Whatever");
+                aboutpage.setContentText("Created by Ben Halligan\n5/12/2018-Present");
+                aboutpage.show();
+            }
+        });
+    }
+
+    private void errorAlert(Exception error){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("THERE WAS an Error...");
+        alert.setHeaderText(error.getMessage());
+        alert.setContentText(error.getStackTrace().toString());
+        alert.show();
+    }
 
 }
