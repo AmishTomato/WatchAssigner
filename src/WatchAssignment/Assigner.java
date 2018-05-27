@@ -72,6 +72,10 @@ public class Assigner {
         }
     }
 
+    public ArrayList<Sailor> getSailors() {
+        return sailors;
+    }
+
     /**
      * Load sailors one per line last name only
      * @param file file of sailors

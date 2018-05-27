@@ -1,5 +1,6 @@
 package WatchAssignment;
 
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -10,6 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -27,11 +29,13 @@ public class Controller {
 
     private Assigner assigner;
 
-    private ObservableList<Sailor> sailors;
-    private ObservableList<Watch>  firstWatches;
-    private ObservableList<Watch> secondWatches;
+    private ObservableList<String> sailors;
+    private ObservableList<String>  firstWatches;
+    private ObservableList<String> secondWatches;
 
     private FileChooser fileChooser = new FileChooser();
+
+    private boolean fileLoaded;
 
     /* List Views */
     @FXML
@@ -77,28 +81,27 @@ public class Controller {
 
     @FXML
     public void initialize(){
+        fileLoaded = false;
+        assigner = new Assigner();
         setUpFileMenu();
         setUpEditHelpMenu();
+        setBtns();
     }
 
     private void setUpFileMenu(){
         open.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                // Open assignment File
-                fileChooser.setTitle("Choose File of Sailors");
-                File file = fileChooser.showOpenDialog(new Stage());
-                try {
-                    assigner.loadFile(file);
-                }catch (IOException ioerr){
-                    errorAlert(ioerr);
-                }
+                // Open previous assignment file
 
             }
         });
         save.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                if(fileLoaded == false){
+                    loadFileAlert();
+                }
                 try {
                     assigner.writeFile();
                 }catch (IOException err){
@@ -137,24 +140,63 @@ public class Controller {
         assignBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                assigner.assignWatches();
-                sailorListView.setItems(assigner.getSailorList());
-
+                if(fileLoaded) {
+                    assigner.assignWatches();
+                    sailorListView.setItems(assigner.getSailorList());
+                    populateListViews();
+                }else{
+                    loadFileAlert();
+                }
             }
         });
         loadBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 // load something
+                fileChooser.setTitle("Choose File of Sailors");
+                File file = fileChooser.showOpenDialog(new Stage());
+                try {
+                    assigner.loadFile(file);
+                    fileLoaded = true;
+                }catch (IOException ioerr){
+                    errorAlert(ioerr);
+                }
             }
         });
     }
+
+    private void populateListViews(){
+        ArrayList<Sailor> tempSailors = assigner.getSailors();
+        List<String> names = new ArrayList<>();
+        List<String> firstWatch = new ArrayList<>();
+        List<String> secondWatch = new ArrayList<>();
+        String[] temp;
+        for(int i=0; i<tempSailors.size(); ++i){
+            temp = tempSailors.get(i).getWatches();
+            names.add(i, temp[0]);
+            firstWatch.add(i,temp[1]);
+            secondWatch.add(i, temp[2]);
+        }
+
+        sailors = FXCollections.observableList(names);
+        firstWatches = FXCollections.observableList(firstWatch);
+        secondWatches = FXCollections.observableList(secondWatch);
+    }
+
 
     private void errorAlert(Exception error){
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("THERE WAS an Error...");
         alert.setHeaderText(error.getMessage());
         alert.setContentText(error.getStackTrace().toString());
+        alert.show();
+    }
+
+    private void loadFileAlert(){
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle("NO FILE LOADED");
+        alert.setHeaderText("NO File of Sailors was loaded");
+        alert.setContentText("Use Load Sailors button to load sailors");
         alert.show();
     }
 
