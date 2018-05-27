@@ -72,6 +72,11 @@ public class Assigner {
         }
     }
 
+    /**
+     * Load sailors one per line last name only
+     * @param file file of sailors
+     * @throws IOException if bad file
+     */
     public void loadFile(File file)throws IOException{
         String filename = file.getName();
         inputFile(filename);
@@ -89,7 +94,12 @@ public class Assigner {
         writer.close();
     }
 
-    public boolean loadSailors(String filename){
+    /**
+     * For loading in a list of watches WATCH #
+     * @param filename file to load ing
+     * @return true if successful
+     */
+    public boolean loadNewWatches(String filename){
         try {
             in = new Scanner(new File(filename));
             String[] line;

@@ -86,6 +86,14 @@ public class Controller {
             @Override
             public void handle(ActionEvent event) {
                 // Open assignment File
+                fileChooser.setTitle("Choose File of Sailors");
+                File file = fileChooser.showOpenDialog(new Stage());
+                try {
+                    assigner.loadFile(file);
+                }catch (IOException ioerr){
+                    errorAlert(ioerr);
+                }
+
             }
         });
         save.setOnAction(new EventHandler<ActionEvent>() {
@@ -121,6 +129,23 @@ public class Controller {
                 aboutpage.setHeaderText("Watch Assigner Version: Whatever");
                 aboutpage.setContentText("Created by Ben Halligan\n5/12/2018-Present");
                 aboutpage.show();
+            }
+        });
+    }
+
+    private void setBtns(){
+        assignBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                assigner.assignWatches();
+                sailorListView.setItems(assigner.getSailorList());
+
+            }
+        });
+        loadBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                // load something
             }
         });
     }
