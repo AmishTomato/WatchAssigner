@@ -29,9 +29,7 @@ public class Controller {
 
     private Assigner assigner;
 
-    private ObservableList<String> sailors;
-    private ObservableList<String>  firstWatches;
-    private ObservableList<String> secondWatches;
+    private ObservableList<String> assignments;
 
     private FileChooser fileChooser = new FileChooser();
 
@@ -39,11 +37,7 @@ public class Controller {
 
     /* List Views */
     @FXML
-    private ListView sailorListView;
-    @FXML
-    private ListView firstWatchListView;
-    @FXML
-    private ListView secondListView;
+    ListView<String> assignmentListView;
 
     /* Buttons */
     @FXML
@@ -129,7 +123,7 @@ public class Controller {
             public void handle(ActionEvent event) {
                 Alert aboutpage = new Alert(Alert.AlertType.INFORMATION);
                 aboutpage.setTitle("About");
-                aboutpage.setHeaderText("Watch Assigner Version: Whatever");
+                aboutpage.setHeaderText("Watch Assigner Version: v1.0.0");
                 aboutpage.setContentText("Created by Ben Halligan\n5/12/2018-Present");
                 aboutpage.show();
             }
@@ -142,7 +136,6 @@ public class Controller {
             public void handle(ActionEvent event) {
                 if(fileLoaded) {
                     assigner.assignWatches();
-                    sailorListView.setItems(assigner.getSailorList());
                     populateListViews();
                 }else{
                     loadFileAlert();
@@ -167,20 +160,17 @@ public class Controller {
 
     private void populateListViews(){
         ArrayList<Sailor> tempSailors = assigner.getSailors();
-        List<String> names = new ArrayList<>();
-        List<String> firstWatch = new ArrayList<>();
-        List<String> secondWatch = new ArrayList<>();
-        String[] temp;
+        List<String> listAssignments = new ArrayList<>();
+
+        String[] assignment;
+
         for(int i=0; i<tempSailors.size(); ++i){
-            temp = tempSailors.get(i).getWatches();
-            names.add(i, temp[0]);
-            firstWatch.add(i,temp[1]);
-            secondWatch.add(i, temp[2]);
+            assignment =  tempSailors.get(i).getWatches();
+            listAssignments.add(i, assignment[0]+" "+assignment[1]+" | "+assignment[2]);
         }
 
-        sailors = FXCollections.observableList(names);
-        firstWatches = FXCollections.observableList(firstWatch);
-        secondWatches = FXCollections.observableList(secondWatch);
+        assignments = FXCollections.observableList(listAssignments);
+        assignmentListView.setItems(assignments);
     }
 
 

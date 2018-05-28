@@ -16,6 +16,7 @@ import java.io.IOException;
 
 public class CMDMain {
     public static void main(String[] args) {
+        System.out.println("Watch Assinger V0.1.0");
         try {
             Assigner assigner = new Assigner();
             assigner.loadFile(new File("Random_Names_Text.txt"));

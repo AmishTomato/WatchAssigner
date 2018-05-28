@@ -7,37 +7,32 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
-fx:controller="WatchAssignment.Controller">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WatchAssignment.Controller">
   <children>
-    <ListView fx:id="secondWatchListView" layoutX="486.0" layoutY="63.0" prefHeight="200.0" prefWidth="100.0" />
-    <ListView fx:id="firstWatchListView" layoutX="386.0" layoutY="63.0" prefHeight="200.0" prefWidth="100.0" />
-    <ListView id="" fx:id="sailorListView" layoutX="286.0" layoutY="63.0" prefHeight="200.0" prefWidth="100.0" />
+    <ListView id="" fx:id="assignmentListView" layoutX="286.0" layoutY="63.0" prefHeight="200.0" prefWidth="298.0" />
     <MenuBar fx:id="menuBar" layoutX="0.0" layoutY="2.0">
       <menus>
-        <Menu mnemonicParsing="false" text="File" fx:id="file">
+        <Menu fx:id="file" mnemonicParsing="false" text="File">
           <items>
-            <MenuItem mnemonicParsing="false" text="Open" fx:id="open" />
-            <MenuItem mnemonicParsing="false" text="Save" fx:id="save" />
-            <MenuItem mnemonicParsing="false" text="Exit" fx:id="exit" />
+            <MenuItem fx:id="open" mnemonicParsing="false" text="Open" />
+            <MenuItem fx:id="save" mnemonicParsing="false" text="Save" />
+            <MenuItem fx:id="exit" mnemonicParsing="false" text="Exit" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Edit" fx:id="edit">
+        <Menu fx:id="edit" mnemonicParsing="false" text="Edit">
           <items>
-            <MenuItem mnemonicParsing="false" text="Delete" fx:id="delete" />
+            <MenuItem fx:id="delete" mnemonicParsing="false" text="Delete" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Help" fx:id="help">
+        <Menu fx:id="help" mnemonicParsing="false" text="Help">
           <items>
-            <MenuItem mnemonicParsing="false" text="About" fx:id="about" />
+            <MenuItem fx:id="about" mnemonicParsing="false" text="About" />
           </items>
         </Menu>
       </menus>
     </MenuBar>
     <Button fx:id="loadBtn" layoutX="31.0" layoutY="97.0" mnemonicParsing="false" text="Load Sailors" />
     <Button fx:id="assignBtn" layoutX="20.0" layoutY="153.0" mnemonicParsing="false" text="Assign Watches" />
-    <Text layoutX="321.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sailor" />
-    <Text layoutX="406.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Watch" />
-    <Text layoutX="498.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Second Watch" />
+    <Text layoutX="321.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sailor: Fist Watch | Second Watch" />
   </children>
 </AnchorPane>
