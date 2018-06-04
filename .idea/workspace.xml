@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="CMD:jar" />
+      <artifact name="WatchAssigner:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/ReadMe.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assignments.txt" afterPath="$PROJECT_DIR$/Assignments.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WatchAssignment/CMDMain.java" afterPath="$PROJECT_DIR$/src/WatchAssignment/CMDMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WatchAssignment/Assigner.java" afterPath="$PROJECT_DIR$/src/WatchAssignment/Assigner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WatchAssignment/Controller.java" afterPath="$PROJECT_DIR$/src/WatchAssignment/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WatchAssignment/sample.fxml" afterPath="$PROJECT_DIR$/src/WatchAssignment/sample.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,7 +69,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMDMain.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CMDMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WatchAssignment/CMDMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -80,18 +81,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Assigner.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/Test1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadMe.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/ReadMe.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Assigner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WatchAssignment/Assigner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+            <state relative-caret-position="497">
+              <caret line="102" column="39" lean-forward="true" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
               <folding>
                 <element signature="e#1593#1594#0" expanded="true" />
                 <element signature="e#1615#1616#0" expanded="true" />
                 <element signature="e#2258#2259#0" expanded="true" />
                 <element signature="e#2288#2289#0" expanded="true" />
-                <marker date="1527463434755" expanded="false" signature="4396:4406" ph=" { " />
-                <marker date="1527463434755" expanded="false" signature="4459:4465" ph=" }" />
+                <marker date="1527902362355" expanded="false" signature="4396:4406" ph=" { " />
+                <marker date="1527902362355" expanded="false" signature="4459:4465" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -110,8 +128,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WatchAssignment/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="124" column="44" lean-forward="true" selection-start-line="124" selection-start-column="44" selection-end-line="124" selection-end-column="44" />
+            <state relative-caret-position="335">
+              <caret line="136" column="32" lean-forward="true" selection-start-line="136" selection-start-column="32" selection-end-line="136" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2635#2636#0" expanded="true" />
@@ -137,7 +155,7 @@
       <file leaf-file-name="Assignments.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assignments.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-67">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -196,10 +214,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/WatchAssignment/Sailor.java" />
         <option value="$PROJECT_DIR$/src/WatchAssignment/Main.java" />
-        <option value="$PROJECT_DIR$/src/WatchAssignment/Assigner.java" />
         <option value="$PROJECT_DIR$/src/WatchAssignment/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/WatchAssignment/Controller.java" />
         <option value="$PROJECT_DIR$/src/WatchAssignment/CMDMain.java" />
+        <option value="$PROJECT_DIR$/docs/ReadMe.txt" />
+        <option value="$PROJECT_DIR$/src/WatchAssignment/Assigner.java" />
+        <option value="$PROJECT_DIR$/src/WatchAssignment/Controller.java" />
       </list>
     </option>
   </component>
@@ -253,7 +272,7 @@
             <path>
               <item name="WatchAssigner" type="b2602c69:ProjectViewProjectNode" />
               <item name="WatchAssigner" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WatchAssigner" type="b2602c69:ProjectViewProjectNode" />
@@ -471,7 +490,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15128000" />
+    <option name="totallyTimeSpent" value="17669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,20 +617,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Random_Names_Text.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assignments.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WatchAssignment/Sailor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -634,8 +639,8 @@
             <element signature="e#1615#1616#0" expanded="true" />
             <element signature="e#2258#2259#0" expanded="true" />
             <element signature="e#2288#2289#0" expanded="true" />
-            <marker date="1527463434755" expanded="false" signature="4396:4406" ph=" { " />
-            <marker date="1527463434755" expanded="false" signature="4459:4465" ph=" }" />
+            <marker date="1527902362355" expanded="false" signature="4396:4406" ph=" { " />
+            <marker date="1527902362355" expanded="false" signature="4459:4465" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -699,8 +704,8 @@
             <element signature="e#1615#1616#0" expanded="true" />
             <element signature="e#2258#2259#0" expanded="true" />
             <element signature="e#2288#2289#0" expanded="true" />
-            <marker date="1527463434755" expanded="false" signature="4396:4406" ph=" { " />
-            <marker date="1527463434755" expanded="false" signature="4459:4465" ph=" }" />
+            <marker date="1527902362355" expanded="false" signature="4396:4406" ph=" { " />
+            <marker date="1527902362355" expanded="false" signature="4459:4465" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -777,8 +782,8 @@
             <element signature="e#1615#1616#0" expanded="true" />
             <element signature="e#2258#2259#0" expanded="true" />
             <element signature="e#2288#2289#0" expanded="true" />
-            <marker date="1527463434755" expanded="false" signature="4396:4406" ph=" { " />
-            <marker date="1527463434755" expanded="false" signature="4459:4465" ph=" }" />
+            <marker date="1527902362355" expanded="false" signature="4396:4406" ph=" { " />
+            <marker date="1527902362355" expanded="false" signature="4459:4465" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -802,8 +807,8 @@
             <element signature="e#1615#1616#0" expanded="true" />
             <element signature="e#2258#2259#0" expanded="true" />
             <element signature="e#2288#2289#0" expanded="true" />
-            <marker date="1527463434755" expanded="false" signature="4396:4406" ph=" { " />
-            <marker date="1527463434755" expanded="false" signature="4459:4465" ph=" }" />
+            <marker date="1527902362355" expanded="false" signature="4396:4406" ph=" { " />
+            <marker date="1527902362355" expanded="false" signature="4459:4465" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -894,8 +899,8 @@
             <element signature="e#1615#1616#0" expanded="true" />
             <element signature="e#2258#2259#0" expanded="true" />
             <element signature="e#2288#2289#0" expanded="true" />
-            <marker date="1527463434755" expanded="false" signature="4396:4406" ph=" { " />
-            <marker date="1527463434755" expanded="false" signature="4459:4465" ph=" }" />
+            <marker date="1527902362355" expanded="false" signature="4396:4406" ph=" { " />
+            <marker date="1527902362355" expanded="false" signature="4459:4465" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -972,21 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WatchAssignment/Assigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-          <folding>
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
-            <element signature="e#2258#2259#0" expanded="true" />
-            <element signature="e#2288#2289#0" expanded="true" />
-            <marker date="1527463434755" expanded="false" signature="4396:4406" ph=" { " />
-            <marker date="1527463434755" expanded="false" signature="4459:4465" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WatchAssignment/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1011,9 +1001,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WatchAssignment/CMDMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Test1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/ReadMe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assignments.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-67">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1021,8 +1034,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WatchAssignment/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="124" column="44" lean-forward="true" selection-start-line="124" selection-start-column="44" selection-end-line="124" selection-end-column="44" />
+        <state relative-caret-position="335">
+          <caret line="136" column="32" lean-forward="true" selection-start-line="136" selection-start-column="32" selection-end-line="136" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2635#2636#0" expanded="true" />
@@ -1031,12 +1044,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WatchAssignment/CMDMain.java">
+    <entry file="file://$PROJECT_DIR$/src/WatchAssignment/Assigner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="497">
+          <caret line="102" column="39" lean-forward="true" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#2258#2259#0" expanded="true" />
+            <element signature="e#2288#2289#0" expanded="true" />
+            <marker date="1527902362355" expanded="false" signature="4396:4406" ph=" { " />
+            <marker date="1527902362355" expanded="false" signature="4459:4465" ph=" }" />
           </folding>
         </state>
       </provider>

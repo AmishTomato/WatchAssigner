@@ -135,6 +135,9 @@ public class Controller {
             @Override
             public void handle(ActionEvent event) {
                 if(fileLoaded) {
+                    if(assigner.isEmptyWatches()){
+                        assigner.populateWatches();
+                    }
                     assigner.assignWatches();
                     populateListViews();
                 }else{

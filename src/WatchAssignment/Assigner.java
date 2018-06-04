@@ -162,13 +162,21 @@ public class Assigner {
         in.close();
     }
 
-    private void populateWatches(){
+    public void populateWatches(){
         for(int i=0; i<ASSIGNMENTS.length; i++){
             String watch = ""+ASSIGNMENTS[i][0];
             int number = (int)ASSIGNMENTS[i][1];
             for(int j=0; j<number; j++) {
                 watches.add(new Watch(watch));
             }
+        }
+    }
+
+    public boolean isEmptyWatches(){
+        if(watches.isEmpty()){
+            return true;
+        }else {
+            return false;
         }
     }
 

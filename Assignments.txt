@@ -1,49 +1,49 @@
-Julianus CGI | WEIGHTROOM
-Minucius NPS PHONE | NPS MESS
-Marinus PAD4 | NFAS MESS
-Faustus NFAS PHONE | ESCORT1
-Viducius PAD1 | PAD3
-Lucius PAD5 | B-1 PERIM
-Decius NPS MESS | NFAS PHONE
-Gnaeus WEIGHTROOM | G-1 PERIM
-Marcellus BEQ QD | WEIGHTROOM
-Tiberius NFAS PHONE | PERIM
-Numberius PAD2 | B-ROVE
-Lucius B-ROVE | WEIGHTROOM
-Menenius B-ROVE | A_ROVE
-Sisenna A_ROVE | B-ROVE
-Gallus A_ROVE | NPS PHONE
-Statius G-1 PERIM | PERIM
-Larcius BEQ QD | ESCORT2
-Trebellius GAMEROOM | G-1 PERIM
-Decmus ESCORT1 | PERIM
-Spurius G-1 PERIM | B-1 PERIM
-Palpellius B-1 PERIM | G-1 PERIM
-Aulus G-1 PERIM | A_ROVE
-Flavius NPS MESS | A_ROVE
-Decius PERIM | BEQ QD
-Herius NPS PHONE | CGI
-Canus PAD5 | PAD5
-Canutius A_ROVE | GAMEROOM
-Horatius ESCORT1 | PAD1
-Blossius PAD3 | PAD4
-Camillius A_ROVE | GAMEROOM
-Caeparius B-ROVE | CGI
-Bitucus NFAS MESS | PAD3
-Quinctius PERIM | NFAS MESS
-Cyprias PAD4 | PAD1
-Placus B-1 PERIM | G-1 PERIM
-Papirius PERIM | B-1 PERIM
-Salonianus PERIM | G-1 PERIM
-Volusenus PAD3 | B-1 PERIM
-Agricola BEQ QD | NFAS PHONE
-Barrius NPS PHONE | B-ROVE
-Sulinus B-ROVE | B-ROVE
-Sextus NPS MESS | PAD2
-Sepunius PAD2 | B-1 PERIM
-Cinnianus ESCORT2 | PAD5
-Numerius ESCORT2 | CLEAN
-Drausus B-1 PERIM | EXTRA
-Postumius NFAS MESS | CLEAN
-Gaius EXTRA | EXTRA
-Arruns PERIM | CLEAN
+Julianus EXTRA | CLEAN
+Minucius CLEAN | EXTRA
+Marinus EXTRA | CLEAN
+Faustus CLEAN | EXTRA
+Viducius EXTRA | CLEAN
+Lucius CLEAN | EXTRA
+Decius EXTRA | CLEAN
+Gnaeus CLEAN | EXTRA
+Marcellus EXTRA | CLEAN
+Tiberius CLEAN | EXTRA
+Numberius EXTRA | CLEAN
+Lucius CLEAN | EXTRA
+Menenius EXTRA | CLEAN
+Sisenna CLEAN | EXTRA
+Gallus EXTRA | CLEAN
+Statius CLEAN | EXTRA
+Larcius EXTRA | CLEAN
+Trebellius CLEAN | EXTRA
+Decmus EXTRA | CLEAN
+Spurius CLEAN | EXTRA
+Palpellius EXTRA | CLEAN
+Aulus CLEAN | EXTRA
+Flavius EXTRA | CLEAN
+Decius CLEAN | EXTRA
+Herius EXTRA | CLEAN
+Canus CLEAN | EXTRA
+Canutius EXTRA | CLEAN
+Horatius CLEAN | EXTRA
+Blossius EXTRA | CLEAN
+Camillius CLEAN | EXTRA
+Caeparius EXTRA | CLEAN
+Bitucus CLEAN | EXTRA
+Quinctius EXTRA | CLEAN
+Cyprias CLEAN | EXTRA
+Placus EXTRA | CLEAN
+Papirius CLEAN | EXTRA
+Salonianus EXTRA | CLEAN
+Volusenus CLEAN | EXTRA
+Agricola EXTRA | CLEAN
+Barrius CLEAN | EXTRA
+Sulinus EXTRA | CLEAN
+Sextus CLEAN | EXTRA
+Sepunius EXTRA | CLEAN
+Cinnianus CLEAN | EXTRA
+Numerius EXTRA | CLEAN
+Drausus CLEAN | EXTRA
+Postumius EXTRA | CLEAN
+Gaius CLEAN | EXTRA
+Arruns EXTRA | CLEAN
